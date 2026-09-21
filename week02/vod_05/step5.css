@@ -1,0 +1,85 @@
+.text-style {
+  font-size: 30px;
+  font-weight: 400;
+  color: mediumpurple;
+  text-decoration: line-through;
+}
+
+.box-style {
+  width: 50px;
+  height: 50px;
+  background-color: bisque;
+}
+
+.hex-style {
+  width: 50px;
+  height: 50px;
+  background-color: rbg(56, 172, 44);
+  opacity: 0.5;
+}
+
+.box-border {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  /* border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+}
+
+.dashed {
+  border-width: 2px;
+  border-style: dashed;
+}
+
+.dotted {
+  border-width: 3px;
+  border-style: dotted;
+}
+
+.double {
+  border-width: 5px;
+  border-style: double;
+}
+
+.box-padding {
+  border: 1px solid black;
+  /* padding: 20px; */
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+.box-margin {
+  border: 1px solid green;
+  margin: 50px;
+}
+
+.content-box {
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 30px;
+  box-sizing: content-box;
+}
+
+.border-box {
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+  padding: 20px;
+  margin: 30px;
+  box-sizing: border-box;
+}
+
+/* 세로로 배치 */
+.box-block {
+  display: block;
+}
+
+/* 가로로 배치 */
+.box-inline {
+  display: inline;
+}
