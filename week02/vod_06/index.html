@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="step6.css" />
+  </head>
+  <body>
+    <h2>주축 변경</h2>
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <div class="flex-container column">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>주축 정렬</h2>
+    <div class="flex-container justify-start">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+    <div class="flex-container justify-center">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+    <div class="flex-container justify-end">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+    <div class="flex-container justify-around">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+    <div class="flex-container justify-between">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>교차축 정렬</h2>
+    <div class="flex-container align-start" style="height: 200px">
+      <div class="flex-item" style="height: 50px">Item 1</div>
+      <div class="flex-item" style="height: 150px">Item 2</div>
+      <div class="flex-item" style="height: 100px">Item 3</div>
+    </div>
+
+    <div class="flex-container align-center" style="height: 200px">
+      <div class="flex-item" style="height: 50px">Item 1</div>
+      <div class="flex-item" style="height: 150px">Item 2</div>
+      <div class="flex-item" style="height: 100px">Item 3</div>
+    </div>
+
+    <div class="flex-container align-end" style="height: 200px">
+      <div class="flex-item" style="height: 50px">Item 1</div>
+      <div class="flex-item" style="height: 150px">Item 2</div>
+      <div class="flex-item" style="height: 100px">Item 3</div>
+    </div>
+
+    <!-- 정중앙 정렬 -->
+    <div class="flex-container justify-center align-center" style="height: 200px">
+      <div class="flex-item" style="height: 50px">Item 1</div>
+      <div class="flex-item" style="height: 150px">Item 2</div>
+      <div class="flex-item" style="height: 100px">Item 3</div>
+    </div>
+
+    <!-- flexbox 내에서 1:2:3 비율
+     어느 하나가 flex 값이 없다면, 없는 요소를 제외한 나머지 공간을 자기들끼리 비율대로 차지하게 됨 -->
+    <h2>플랙스 박스 내에서 비율</h2>
+    <div class="flex-container">
+      <div class="flex-item flex-1">Item 1</div>
+      <div class="flex-item flex-2">Item 2</div>
+      <div class="flex-item flex-3">Item 3</div>
+    </div>
+
+    <h2>줄바꿈</h2>
+    <!-- 아이템이 많아졌을 때, flexbox의 너비보다 item들의 총 너비가 길어지면, item에서 설정한 width보다 작아지게 됨
+     그 이유는, flexbox가 자기보다 더 넓은 content를 넣으려고 하면, 안에 있는 요소들의 너비를 줄이려고 하기 때문이다.
+     그래서 item 요소가 찌그러지는 것을 막으려면 flexbox의 줄바꿈 속성을 줄 수 있다. 다음 줄로 넘어가게 된다. -->
+    <div class="flex-container wrap">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+      <div class="flex-item">Item 4</div>
+      <div class="flex-item">Item 5</div>
+      <div class="flex-item">Item 6</div>
+      <div class="flex-item">Item 7</div>
+      <div class="flex-item">Item 8</div>
+    </div>
+
+  </body>
+</html>

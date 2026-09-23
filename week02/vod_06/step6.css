@@ -1,0 +1,90 @@
+.flex-container {
+    display: flex;
+    border: 2px solid #dddddd;
+    padding: 20px;
+    margin: 20px;
+
+    /* flexbox에서 요소들끼리의 간격 지정 */
+    /* 밑에 예시는 상하 간격, 좌우 간격 */
+    /* gap: 20px 10px; */
+    gap: 20px;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: #4488ff;
+}
+
+.column {
+    /* 주축이 세로가 됨 */
+    flex-direction: column;
+
+    /* flex-direction은 row, column, row-reverse, column-reverse
+    column은 상단 -> 하단 출력. 기본값은 row이므로 왼쪽 -> 오른쪽으로 가로로 출력
+    column-reverse는 하단 -> 상단, row-reverse는 우측 -> 좌측으로 배치 */
+}
+
+.justify-start {
+    /* 이게 기본값이다. */
+    justify-content: flex-start;
+}
+
+.justify-center {
+    /* 주축 가운데 정렬 */
+    justify-content: center;
+}
+
+.justify-end {
+    /* 주축의 끝부분에 정렬 */
+    justify-content: flex-end;
+}
+
+.justify-around {
+    /* 요소 간 좌우 간격 균일 */
+    justify-content: space-around;
+}
+
+.justify-between {
+    /* space-around와 비슷하게 요소들 간격이 균일하게 배치됨.
+    space-around는 요소의 처음과 끝(왼쪽과 오른쪽)에도 공간이 들어감
+    space-between은 요소의 시작점과 끝점에는 공간이 들어가지 않는다는 차이가 있음. */
+    justify-content: space-between;
+}
+
+/* 교차축 정렬은 align-items */
+.align-start {
+    /* 기본값이 flex-start */
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-center {
+    /* 교차축 중앙 정렬 */
+    align-items: center;
+}
+
+.align-end {
+    /* 교차축 끝에 정렬 */
+    align-items: flex-end;
+}
+
+/* flexbox에서 비율은 flex라는 속성을 이용 */
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+.flex-3 {
+    flex: 3;
+}
+
+/* item 요소가 찌그러지는 것을 막으려면 flexbox의 줄바꿈 속성을 줄 수 있다. 다음 줄로 넘어가게 된다. */
+.wrap {
+    flex-wrap: wrap;
+}
