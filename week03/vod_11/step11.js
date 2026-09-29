@@ -1,0 +1,10 @@
+import { add, sub, mul, PI } from "./math.js";
+import sayHello from "./math.js";
+
+console.log(add(10, 20));
+console.log(sub(10, 20));
+console.log(mul(10, 20));
+
+sayHello();
+
+console.log(PI);
